@@ -22,12 +22,12 @@
         "test": "echo \"Error: run tests from root\" && exit 1"
     },
     "dependencies": {
-        "@iceworks/generate-project": "^1.0.0",
         "chalk": "^4.0.0",
         "commander": "^6.0.0",
         "fs-extra": "^8.1.0",
         "ice-npm-utils": "^2.0.1",
-        "inquirer": "^7.0.4"
+        "inquirer": "^7.0.4",
+        "hightea-generate-project": "0.0.1"
     },
     "repository": {
         "type": "http",

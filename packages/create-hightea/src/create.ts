@@ -1,6 +1,6 @@
 import * as inquirer from 'inquirer';
 import * as fs from 'fs-extra';
-import { downloadAndGenerateProject, checkEmpty } from '@iceworks/generate-project';
+import { downloadAndGenerateProject, checkEmpty } from 'hightea-generate-project';
 
 // eslint-disable-next-line
 const chalk = require('chalk');
