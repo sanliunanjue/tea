@@ -31,7 +31,6 @@
     },
     "repository": {
         "type": "http",
-        "url": "https://github.com/alibaba/ice/tree/master/packages/create-hightea"
-    },
-    "gitHead": "07ac7bb07162aac8c90778dd1de4a2060f8df498"
+        "url": "https://github.com/sanliunanjue/tea/tree/main/packages/create-hightea"
+    }
 }
