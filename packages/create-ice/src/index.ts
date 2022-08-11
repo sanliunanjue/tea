@@ -10,7 +10,7 @@ const pkgContent = fs.readJSONSync(path.join(__dirname, '..', 'package.json'));
   const program = new Command();
 
   program
-    .name(`create-ice version ${pkgContent.version}`)
+    .name(`create-hightea version ${pkgContent.version}`)
     .usage('<command> [options]');
 
   program
@@ -33,8 +33,8 @@ const pkgContent = fs.readJSONSync(path.join(__dirname, '..', 'package.json'));
   const dirname: string = program.args[0] ? program.args[0] : '.';
   const templateName: string = program.template ? program.template : program.args[1];
 
-  console.log('create-ice version:', pkgContent.version);
-  console.log('create-ice args', dirname, templateName);
+  console.log('create-hightea version:', pkgContent.version);
+  console.log('create-hightea args', dirname, templateName);
 
   const dirPath = path.join(process.cwd(), dirname);
   await create(dirPath, templateName, dirname);

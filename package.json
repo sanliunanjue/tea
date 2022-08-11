@@ -6,7 +6,7 @@
         "packages/*"
     ],
     "description": "A universal framework based on React.js",
-    "author": "ice-admin@alibaba-inc.com",
+    "author": "weixiquan",
     "license": "MIT",
     "scripts": {
         "setup": "rm -rf node_modules && yarn install && npm run build",

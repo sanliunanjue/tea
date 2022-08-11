@@ -1,4 +1,4 @@
-# create-ice
+# create-hightea
 
 create icejs project.
 

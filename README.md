@@ -37,7 +37,7 @@ We recommend creating a new icejs app using [AppWorks](https://marketplace.visua
 
 ### Setup by CLI
 
-We recommend creating a new icejs app using create-ice, which sets up everything automatically for you. To create a project, run:
+We recommend creating a new icejs app using create-hightea, which sets up everything automatically for you. To create a project, run:
 
 ```bash
 $ npm init ice <project-name>
