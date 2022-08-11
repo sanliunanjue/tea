@@ -1,0 +1,12 @@
+{
+  "vite": true,
+  "minify": false,
+  "plugins": [
+    "build-plugin-icestark",
+    ["build-plugin-fusion", {
+      "themeConfig": {
+        "nextPrefix": "next-fd-"
+      }
+    }]
+  ]
+}

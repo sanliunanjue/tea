@@ -1,0 +1,14 @@
+{
+  "vite": true,
+  "plugins": [
+    ["build-plugin-ignore-style", { "libraryName": "@alifd/next"}],
+    [
+      "build-plugin-moment-locales",
+      {
+        "locales": [
+          "zh-cn", "ru"
+        ]
+      }
+    ]
+  ]
+}
