@@ -11,7 +11,7 @@
     "main": "lib/index.js",
     "repository": {
         "type": "http",
-        "url": "https://github.com/apptools-lab/AppWorks/tree/master/packages/generate-project"
+        "url": "https://github.com/sanliunanjue/tea/tree/main/packages/generate-project"
     },
     "scripts": {
         "build": "rm -rf lib && tsc",
