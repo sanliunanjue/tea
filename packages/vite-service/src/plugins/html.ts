@@ -28,11 +28,11 @@ const getHtmlContent = ({
 };
 
 interface Option {
-  filename: string
-  template: string
-  entry: string
-  rootDir: string
-  templateParameters?: object
+  filename: string;
+  template: string;
+  entry: string;
+  rootDir: string;
+  templateParameters?: object;
   ssr?: boolean;
   command?: string;
 }

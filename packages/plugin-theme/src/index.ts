@@ -13,7 +13,7 @@ import { watchThemeFiles } from './workflow/watcher';
 import { resolver } from './plugins/helper/resolver';
 
 interface Options {
-  theme?: string    // 默认主题
+  theme?: string;    // 默认主题
 }
 
 /**

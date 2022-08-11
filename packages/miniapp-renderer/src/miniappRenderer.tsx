@@ -5,7 +5,7 @@ interface IRoute {
   source: string;
   component: () => ComponentType & {
     __pageConfig: IRoute;
-  },
+  };
   pageSource: string;
 }
 

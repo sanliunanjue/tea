@@ -7,11 +7,11 @@ import { getNameFromPath } from '../utils/common';
 import { getThemeVarsPlugin } from '../plugins/postcss/getThemeVarsPlugin';
 
 interface ThemesDataType {
-  [themeKey: string]: ThemeVarsType
+  [themeKey: string]: ThemeVarsType;
 }
 
 interface ThemeVarsType {
-  [cssVariable: string]: string
+  [cssVariable: string]: string;
 }
 
 // 全局主题数据，建议只通过 getThemesData 获取

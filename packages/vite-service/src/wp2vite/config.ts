@@ -14,8 +14,8 @@ type Transformer = (
 ) => any;
 
 type ConfigMap = Record<string, string | string[] | {
-  name: string | string[]
-  transform: Transformer
+  name: string | string[];
+  transform: Transformer;
 }>
 
 interface MinifierConfig {
@@ -146,7 +146,7 @@ const configMap: ConfigMap = {
       });
 
       // Object to Array
-      const result: {find: string | RegExp, replacement: string}[] = Object.entries(data).map(([find, replacement]) => {
+      const result: {find: string | RegExp; replacement: string}[] = Object.entries(data).map(([find, replacement]) => {
         return { find, replacement };
       });
       // alias 到指向 framework runtime 入口

@@ -2,7 +2,7 @@ import type { TransformCallback } from 'postcss';
 import { ThemeVarsType } from '../../utils/themesUtil';
 
 interface Option {
-  themeVars: ThemeVarsType
+  themeVars: ThemeVarsType;
 }
 
 /**

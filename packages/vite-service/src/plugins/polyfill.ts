@@ -6,11 +6,11 @@ import * as glob from 'fast-glob';
 import { replace } from 'lodash';
 
 interface Option {
-  value: 'usage' | 'entry' | false,
-  browserslist: any,
-  rootDir: string,
-  hash: boolean,
-  outputAssetsPath: { css: string; js: string }
+  value: 'usage' | 'entry' | false;
+  browserslist: any;
+  rootDir: string;
+  hash: boolean;
+  outputAssetsPath: { css: string; js: string };
 }
 
 export const polyfillPlugin = (

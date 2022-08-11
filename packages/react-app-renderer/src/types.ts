@@ -4,10 +4,10 @@ import type { RuntimeModule } from 'create-app-shared';
 export type OnError = (err: Error, componentStack: string) => void
 
 export interface Context {
-  initialContext: InitialContext,
-  initialData: { [k: string]: any },
-  pageInitialProps: { [k: string]: any },
-  enableRouter?: boolean,
+  initialContext: InitialContext;
+  initialData: { [k: string]: any };
+  pageInitialProps: { [k: string]: any };
+  enableRouter?: boolean;
 }
 
 export interface ServerContext {
@@ -39,7 +39,7 @@ export type RenderAppConfig = {
     errorBoundary?: boolean;
     getInitialData?: (context: InitialContext) => Promise<any>;
     renderComponent?: React.ComponentType;
-  },
+  };
 };
 export type AppLifecycle = {
   createBaseApp: <T>(appConfig: T, buildConfig: any, context: any) => { runtime: RuntimeModule; appConfig: T };

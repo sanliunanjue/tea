@@ -3,7 +3,7 @@ import type { WebpackPluginInstance, Compiler } from 'webpack';
 import { ConcatSource } from 'webpack-sources';
 
 export interface Options {
-  getCode: () => string
+  getCode: () => string;
 }
 
 /**

@@ -8,8 +8,8 @@ const createFrame = ({
   source,
   location,
 }: {
-  source: string
-  location: SourceLocation
+  source: string;
+  location: SourceLocation;
 }) => {
   const frame = codeFrameColumns(source, location, {
     forceColor: true,

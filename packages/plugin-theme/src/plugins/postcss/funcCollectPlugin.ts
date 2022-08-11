@@ -4,9 +4,9 @@ import { walkDeps, walkerSome, walkerFind, getAllVars } from '../helper/walkers'
 import { getFunction, isFunction } from '../../utils/common';
 
 interface Option {
-  type?: 'sass' | 'less',
-  data: any
-  setData: (data: any) => void
+  type?: 'sass' | 'less';
+  data: any;
+  setData: (data: any) => void;
 }
 
 /**

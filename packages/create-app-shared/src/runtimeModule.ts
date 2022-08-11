@@ -41,25 +41,25 @@ type GetAppComponent = () => React.ComponentType;
 type GetWrapperPageRegistration = () => IWrapper<any>[];
 
 interface RuntimeAPI {
-  setRenderApp?: SetRenderApp,
-  addProvider: AddProvider,
-  addDOMRender: AddDOMRender,
-  modifyRoutes?: ModifyRoutes,
-  wrapperRouterRender?: WrapperRouterRender,
-  modifyRoutesComponent?: ModifyRoutesComponent,
-  wrapperPageComponent?: WrapperPageComponent,
-  applyRuntimeAPI: ApplyRuntimeAPI,
-  appConfig: AppConfig,
-  buildConfig: BuildConfig,
-  context: Context,
-  staticConfig: any,
-  getRuntimeValue: GetRuntimeValue,
+  setRenderApp?: SetRenderApp;
+  addProvider: AddProvider;
+  addDOMRender: AddDOMRender;
+  modifyRoutes?: ModifyRoutes;
+  wrapperRouterRender?: WrapperRouterRender;
+  modifyRoutesComponent?: ModifyRoutesComponent;
+  wrapperPageComponent?: WrapperPageComponent;
+  applyRuntimeAPI: ApplyRuntimeAPI;
+  appConfig: AppConfig;
+  buildConfig: BuildConfig;
+  context: Context;
+  staticConfig: any;
+  getRuntimeValue: GetRuntimeValue;
 }
 
 export interface RuntimePlugin {
   (
     apis: RuntimeAPI
-  ): void
+  ): void;
 }
 
 class RuntimeModule {

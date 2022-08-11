@@ -2,8 +2,8 @@ import { TransformCallback } from 'postcss';
 import type { ThemeVarsType } from '../../utils/themesUtil';
 
 interface Option {
-  getVarsMap: () => ThemeVarsType
-  type?: 'sass' | 'less'
+  getVarsMap: () => ThemeVarsType;
+  type?: 'sass' | 'less';
 }
 
 /**

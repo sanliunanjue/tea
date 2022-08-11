@@ -2,7 +2,7 @@ import * as path from 'path';
 import { Plugin } from 'vite';
 import { formatPath } from '@builder/app-helpers';
 
-const getPageName = (resolveId: string): { type: string; pageName: string; } => {
+const getPageName = (resolveId: string): { type: string; pageName: string } => {
   const layoutRegExp = /src\/pages\/(\w+)\/Layout/;
   const pageRegExp = /src\/pages\/(\w+)(\/index)?(.(j|t)s(x)?)?$/;
   let type = '';

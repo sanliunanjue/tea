@@ -13,9 +13,9 @@ export default class BaseGenerator {
   public options: IGeneratorOptions;
 
   public builtInMethods: {
-    applyMethod: Function,
-    getValue: Function,
-    setValue: Function
+    applyMethod: Function;
+    getValue: Function;
+    setValue: Function;
   };
 
   public runAppPath: string;
@@ -112,7 +112,7 @@ export default class BaseGenerator {
     });
   }
 
-  public getRoutesFilePath() :string {
+  public getRoutesFilePath(): string {
     throw new Error('Method not implemented.');
   }
 

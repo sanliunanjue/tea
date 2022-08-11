@@ -5,7 +5,7 @@ import chalk from 'chalk';
 interface SpeedData {
   [pluginName: string]: {
     [fileId: string]: number;
-  }
+  };
 }
 
 class PluginSpeed {

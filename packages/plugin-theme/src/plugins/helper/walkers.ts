@@ -5,9 +5,9 @@ import * as fs from 'fs';
 import { isFunction } from '../../utils/common';
 
 interface INode {
-  name: string,
-  value: string,
-  node: Root
+  name: string;
+  value: string;
+  node: Root;
 }
 
 /**

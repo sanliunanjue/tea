@@ -26,7 +26,7 @@ export interface IRunAppRenderData {
   relativeCorePath?: string;
   typesPath?: string;
   buildConfig?: {
-    router: boolean,
+    router: boolean;
   };
   errorBoundary?: boolean;
   pageConfig?: any;

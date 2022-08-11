@@ -16,10 +16,10 @@ export default function getLocaleData({
   headers,
   basename,
 }: {
-  url: UrlObject,
-  i18nConfig: I18nConfig,
-  headers?: Record<string, string>,
-  basename?: string,
+  url: UrlObject;
+  i18nConfig: I18nConfig;
+  headers?: Record<string, string>;
+  basename?: string;
 }) {
   const pathname = url.pathname || '/';
   const detectedLocale = getDetectedLocale({ pathname, headers, i18nConfig, basename });
@@ -38,10 +38,10 @@ function getDetectedLocale(
     headers = {},
     basename,
   }: { 
-    pathname: string, 
-    i18nConfig: I18nConfig,
-    headers?: Record<string, string>,
-    basename?: string,
+    pathname: string; 
+    i18nConfig: I18nConfig;
+    headers?: Record<string, string>;
+    basename?: string;
   }) {
   let cookies;
   if (typeof window === 'undefined') {

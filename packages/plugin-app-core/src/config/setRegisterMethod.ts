@@ -21,8 +21,8 @@ interface ImportDeclarationData {
   importSource?: string;
   exportMembers?: string[];
   exportDefault?: string;
-  alias?: Record<string, string>
-  multipleSource?: Record<string, SourceData[]>
+  alias?: Record<string, string>;
+  multipleSource?: Record<string, SourceData[]>;
 }
 
 export default (api, options) => {

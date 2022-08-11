@@ -5,7 +5,7 @@ interface LoaderConfig {
   options?: Record<string, any>;
 }
 interface Options {
-  loaderConfig?: Record<string, LoaderConfig>
+  loaderConfig?: Record<string, LoaderConfig>;
 }
 
 class WebpackPluginQueryLoader implements WebpackPluginInstance {

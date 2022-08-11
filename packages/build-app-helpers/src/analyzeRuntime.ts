@@ -7,7 +7,7 @@ import type { Loader } from 'esbuild';
 
 type CheckMap = Record<string, boolean>;
 type WebpackAlias = Record<string, string>;
-type ViteAlias = {find: string | RegExp, replacement: string}[];
+type ViteAlias = {find: string | RegExp; replacement: string}[];
 interface Options {
   rootDir: string;
   parallel?: number;
@@ -15,7 +15,7 @@ interface Options {
   mode?: 'webpack' | 'vite';
   // webpack mode
   alias?: WebpackAlias | ViteAlias;
-  customRuntimeRules?: Record<string, string[]>
+  customRuntimeRules?: Record<string, string[]>;
 }
 
 const defaultRuntimeRules = {

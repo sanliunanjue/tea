@@ -19,7 +19,7 @@ export type CreateHistory = (options: {
 }) => History<unknown>
 type InitialContext = null | { location?: Location }
 type Options = {
-  initialContext?: InitialContext,
+  initialContext?: InitialContext;
   staticConfig?: {
     routes: Route[];
     [key: string]: unknown;

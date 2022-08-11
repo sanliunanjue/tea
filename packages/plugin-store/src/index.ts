@@ -9,12 +9,12 @@ import vitePluginPageRedirect from './vitePluginPageRedirect';
 const { name: pluginName } = require('../package.json');
 
 interface IReplaceRouterPathOptions {
-  tempDir: string,
-  applyMethod: (...args: string[]) => void,
-  routesPaths: string,
-  rootDir:string, 
-  srcPath: string,
-  alias: Record<string, string>,
+  tempDir: string;
+  applyMethod: (...args: string[]) => void;
+  routesPaths: string;
+  rootDir: string; 
+  srcPath: string;
+  alias: Record<string, string>;
 }
 
 export default async (api: any) => {

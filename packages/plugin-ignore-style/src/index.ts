@@ -4,7 +4,7 @@ import type { Plugin } from 'vite';
 interface Options {
   libraryName: string;
   style?: string;
-  rule?:string;
+  rule?: string;
 }
 
 const getStyleRule = (libraryName: string, style = 'style'): string => `${libraryName}/(es|lib)/[-\\w+]+/(${style}|${style}.js|${style}/index.js)$`;
