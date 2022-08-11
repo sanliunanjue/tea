@@ -19,12 +19,12 @@ const pkgContent = fs.readJSONSync(path.join(__dirname, '..', 'package.json'));
   program.on('--help', () => {
     console.log('');
     console.log('Examples:');
-    console.log('  $ npm init ice');
-    console.log('  $ npm init ice --template @alifd/fusion-design-pro');
+    console.log('  $ npm init hightea');
+    console.log('  $ npm init hightea --template @alifd/fusion-design-pro');
     console.log('');
-    console.log('  $ npm init ice ice-app');
-    console.log('  $ npm init ice ice-app @alifd/fusion-design-pro');
-    console.log('  $ npm init ice ice-app --template @alifd/fusion-design-pro');
+    console.log('  $ npm init hightea hightea-app');
+    console.log('  $ npm init hightea hightea-app @alifd/fusion-design-pro');
+    console.log('  $ npm init hightea hightea-app --template @alifd/fusion-design-pro');
     process.exit(0);
   });
 

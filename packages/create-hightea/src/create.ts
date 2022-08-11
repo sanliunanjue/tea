@@ -1,6 +1,5 @@
 import * as inquirer from 'inquirer';
 import * as fs from 'fs-extra';
-import { checkAliInternal } from 'ice-npm-utils';
 import { downloadAndGenerateProject, checkEmpty } from '@iceworks/generate-project';
 
 // eslint-disable-next-line
@@ -31,7 +30,6 @@ export default async function create(dirPath: string, templateName: string, dirn
   }
 
   await downloadAndGenerateProject(dirPath, templateName);
-  const isAliInternal = await checkAliInternal();
 
   console.log();
   console.log('Initialize project successfully.');
@@ -40,16 +38,9 @@ export default async function create(dirPath: string, templateName: string, dirn
   console.log();
   console.log(chalk.cyan(`    cd ${dirname}`));
 
-  if (isAliInternal) {
-    console.log(chalk.cyan('    tnpm install'));
-    console.log(chalk.cyan('    tnpm start'));
-    console.log(chalk.cyan('Detected that you are an Alibaba user, DEF plugin has been added!'));
-  } else {
-    console.log(chalk.cyan('    npm install'));
-    console.log(chalk.cyan('    npm start'));
-  }
+  console.log(chalk.cyan('    npm install'));
+  console.log(chalk.cyan('    npm start'));
 
-  console.log(chalk.cyan('\n\nWe have prepared develop toolkit for you. \nSee: https://marketplace.visualstudio.com/items?itemName=iceworks-team.iceworks'));
   console.log();
 }
 

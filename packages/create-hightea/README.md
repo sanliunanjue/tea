@@ -1,15 +1,15 @@
 # create-hightea
 
-create icejs project.
+create hightea project.
 
 ## Usage
 
 ```bash
-$ npm init ice <projectName>
+$ npm init hightea <projectName>
 # or with template
-$ npm init ice <projectName> <template>
+$ npm init hightea <projectName> <template>
 # or use yarn
-$ yarn create ice <projectName>
+$ yarn create hightea <projectName>
 
 $ cd <projectName>
 $ npm install
